@@ -21,7 +21,7 @@ export class Note extends React.Component{
     updateNoteLikes(){
         let id = this.props.note.id;
         let categoryNum = this.props.categoryNum;
-        axios.put(`http://localhost:5000/notes/updatelikes/?id=${id}&category=${categoryNum}`);
+        axios.put(`https://nameless-oasis-07678.herokuapp.com/notes/updatelikes/?id=${id}&category=${categoryNum}`);
         this.refresh();
     }
     refresh(){

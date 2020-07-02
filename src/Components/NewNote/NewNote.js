@@ -70,7 +70,7 @@ export class NewNote extends React.Component{
         let note = this.state.note;
         let name = this.state.name;
         if(note !== '' && category !== Infinity){
-            axios.post(`http://localhost:5000/notes/create/?category=${category}
+            axios.post(`https://nameless-oasis-07678.herokuapp.com/notes/create/?category=${category}
             &note=${note}&user=${name}`);
             alert("Note has successfully been added. Refresh previous page to view.")
         }else if (note === ''){
