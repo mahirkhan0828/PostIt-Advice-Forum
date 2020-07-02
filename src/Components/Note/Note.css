@@ -1,0 +1,38 @@
+.Note{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1rem auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Content p{
+    margin: 3rem 1.5rem 0.5rem 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    flex-basis: 100%;
+}
+.Likes{
+    display: flex;
+    flex-basis: 100%;
+    margin-bottom: 3rem;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.Likes p{
+    font-size: 1.3rem;
+}
+
+.Likes img {
+    height: 1.3rem;
+    width: 1.3rem;
+    text-align: center;
+}
+#ThumbsUp{
+    margin-left: 4rem; 
+}
+#ThumbsUp:hover{
+    cursor: pointer;
+    opacity: 0.3;
+}

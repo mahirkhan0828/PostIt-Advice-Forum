@@ -1,0 +1,87 @@
+.NewNote{
+    background-image: url('https://lh3.googleusercontent.com/proxy/3W1b-CwOZfKqtOdbIL9qHL8ph0gWXULCUVXxICsa5NvGwOjjhqeISAGbTBwIpUHcKDuqzeVUKkz512lQZHPGo4xQLgAAQkw');
+    width: 60%;
+    height: 80%;
+    margin: 3rem auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#app{
+    height: 100vh;
+
+}
+
+#app h1{
+    font-size: 4rem;
+    margin: 0rem auto 0rem auto;
+    flex-basis: 100%;
+}
+.rainbow2{
+    font-weight: bold;
+    color: #ff0000;
+  
+  text-shadow: 0 2px 2px #FF0000, 
+        -2px 5px 0 #ff7f00, 
+        -4px 10px 0 #ffff00,
+        -8px 15px 0 #00ff00,
+        -12px 20px 0 white,
+        -16px 25px 0 #4b0082,
+        -20px 30px 0 #9400d3;
+  }
+textarea{
+    margin: 4rem auto 1rem auto;
+    font-size: 2rem;
+    width: 80%;
+    height: 40%;
+}
+input{
+    margin: 2rem 1rem;
+    font-size: 1.5rem;
+    width: 40%;
+}
+#anonymous{
+    width: 40%;
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
+    cursor: pointer;
+}
+#anonymous:hover{
+    background-color: red;
+    color: white;
+}
+.Name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.SubmitButton{
+    font-size: 2rem;
+    width: 15rem;
+    margin: 0.5rem auto;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.SubmitButton:hover{
+    background-color: red;
+    color: white;
+}
+#app h2{
+    color: black;
+    font-size: 2rem;
+}
+.Category button{
+    width: 10rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.Category button:hover{
+    background-color: red;
+}
+.Category button:focus{
+    background-color: red;
+}
+

@@ -1,0 +1,63 @@
+.Advice {
+    display: flex;
+    justify-content: space-evenly;
+}
+.Advice h2{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 2.2rem;
+}
+
+.Career{
+    width: 20%;
+
+}
+.Career h2{
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    border: 0.2rem solid  #0000ff;
+    color: #ff7f00;
+    background-color: #4367aa;
+}
+.College{
+    width: 20%;
+
+}
+.College h2{
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    border: 0.2rem solid  #FF0000;
+    color: #4b0082;
+    background-color: #F0E68C;
+
+}
+.Motivation{
+    width: 20%;
+
+}
+.Motivation h2{
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    border: 0.2rem solid  #ff7f00;
+    color: #183d2d;
+    background-color: #fa3232;
+}
+.Fitness{
+    width: 20%;
+}
+.Fitness h2{
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    border: 0.2rem solid  #4b0082;
+    color: #0000ff;
+    background-color: #FF6347;
+}
+.Relationships{
+    width: 20%;
+
+}
+.Relationships h2{
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    border: 0.2rem solid  #22533d;
+    color: #FF0000;
+    background-color: #2E8B57;
+}
+.break{
+    height: 2rem;
+}
