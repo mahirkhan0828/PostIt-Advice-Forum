@@ -20,10 +20,7 @@ export class Note extends React.Component{
     }
     updateNoteLikes(){
         axios.put(`https://nameless-oasis-07678.herokuapp.com/notes/updatelikes/?id=${this.props.note.id}&category=${this.props.categoryNum}`);
-        this.refresh();
-    }
-    refresh(){
-        window.location.reload();
+        setTimeout(function(){window.location.reload()}, 300);
     }
 
     render(){

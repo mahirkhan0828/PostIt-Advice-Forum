@@ -148,6 +148,9 @@
   top: 0;
   border-radius: 10px;
 }
+.glow-on-hover:focus{
+  color: #00FFFF;
+}
 
 @keyframes glowing {
   0% { background-position: 0 0; }
