@@ -66,17 +66,13 @@ export class NewNote extends React.Component{
         })
     }
     addNote(){
-        let category = this.state.category;
-        let note = this.state.note;
-        let name = this.state.name;
-        if(note !== '' && category !== Infinity){
-            axios.post(`https://nameless-oasis-07678.herokuapp.com/notes/create/?category=${category}
-            &note=${note}&user=${name}`);
+
+        try{
+            axios.post(`https://nameless-oasis-07678.herokuapp.com/notes/create/?category=${this.state.category}
+            &note=${this.state.note}&user=${this.state.name}`);
             alert("Note has successfully been added. Refresh previous page to view.")
-        }else if (note === ''){
-            alert("You have not written a note.")
-        }else if(category === Infinity && note !== ''){
-            alert("You have not chosen a category.")
+        }catch(error){
+            alert("Error has occured and note has not been added.")
         }
         window.location.reload();
     }

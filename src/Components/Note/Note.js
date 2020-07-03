@@ -19,14 +19,13 @@ export class Note extends React.Component{
         return this.state.noteImages[randomNumber];
     }
     updateNoteLikes(){
-        let id = this.props.note.id;
-        let categoryNum = this.props.categoryNum;
-        axios.put(`https://nameless-oasis-07678.herokuapp.com/notes/updatelikes/?id=${id}&category=${categoryNum}`);
+        axios.put(`https://nameless-oasis-07678.herokuapp.com/notes/updatelikes/?id=${this.props.note.id}&category=${this.props.categoryNum}`);
         this.refresh();
     }
     refresh(){
         window.location.reload();
     }
+
     render(){
         let noteImage = this.getRandomNoteImage();
         return(

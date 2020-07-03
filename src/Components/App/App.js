@@ -28,14 +28,10 @@ class App extends React.Component{
     this.setState({SortBy: 'MostRecent'});
   }
   getData(){
-    let data = axios.get('https://nameless-oasis-07678.herokuapp.com/notes');
-    data.then(response=>{
-      let NoteData = response['data'];
-      this.setState({NoteData: NoteData});
+    axios.get('https://nameless-oasis-07678.herokuapp.com/notes')
+    .then(response=>{
+      this.setState({NoteData: response['data']});
     })
-  }
-  refresh(){
-    window.location.reload();
   }
   changePage(){
     window.open('/newnote');

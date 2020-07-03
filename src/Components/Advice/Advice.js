@@ -4,10 +4,6 @@ import './Advice.css';
 import {Note} from '../Note/Note';
 
 export class Advice extends React.Component{
-    // constructor(props){
-    //     super(props);
-    // }
-
     render(){
         // Check to see if the component has received the data yet.
         if (!this.props.data['career']){
