@@ -28,7 +28,7 @@ class App extends React.Component{
     this.setState({SortBy: 'MostRecent'});
   }
   getData(){
-    axios.get('https://nameless-oasis-07678.herokuapp.com/notes')
+    axios.get('https://post-it-real-surprised-leopard.mybluemix.net/api/notes')
     .then(response=>{
       this.setState({NoteData: response['data']});
     })

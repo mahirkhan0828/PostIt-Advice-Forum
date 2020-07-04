@@ -8,8 +8,7 @@ export class Note extends React.Component{
         super(props);
         this.updateNoteLikes = this.updateNoteLikes.bind(this);
         this.state = {
-            noteImages : ['https://lh3.googleusercontent.com/proxy/3W1b-CwOZfKqtOdbIL9qHL8ph0gWXULCUVXxICsa5NvGwOjjhqeISAGbTBwIpUHcKDuqzeVUKkz512lQZHPGo4xQLgAAQkw',
-        'https://images.clipartlogo.com/files/images/21/218409/yellow-post-it-note_p',
+            noteImages : ['https://images.clipartlogo.com/files/images/21/218409/yellow-post-it-note_p',
         'https://i.pinimg.com/originals/a3/81/54/a38154bef8aac28acf0e3bd76bb3ff5b.png',
         ]
         }
@@ -19,7 +18,7 @@ export class Note extends React.Component{
         return this.state.noteImages[randomNumber];
     }
     updateNoteLikes(){
-        axios.put(`https://nameless-oasis-07678.herokuapp.com/notes/updatelikes/?id=${this.props.note.id}&category=${this.props.categoryNum}`);
+        axios.put(`https://post-it-real-surprised-leopard.mybluemix.net/api/notes/updatelikes/?id=${this.props.note.id}&category=${this.props.categoryNum}`);
         setTimeout(function(){window.location.reload()}, 300);
     }
 

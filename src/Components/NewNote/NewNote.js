@@ -17,7 +17,7 @@ export class NewNote extends React.Component{
         this.state = {
             note: '',
             name: 'Anonymous',
-            category: Infinity
+            category: 3
         }
     }
     // We need to handle changes for input events as well as click events by 
@@ -68,7 +68,7 @@ export class NewNote extends React.Component{
     addNote(){
 
         try{
-            axios.post(`https://nameless-oasis-07678.herokuapp.com/notes/create/?category=${this.state.category}
+            axios.post(`https://post-it-real-surprised-leopard.mybluemix.net/api/notes/create/?category=${this.state.category}
             &note=${this.state.note}&user=${this.state.name}`);
             alert("Note has successfully been added. Refresh previous page to view.")
         }catch(error){
